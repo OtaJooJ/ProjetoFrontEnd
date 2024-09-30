@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Contatos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontes -->
+    <!-- Fonte para Titulos e etc -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Fonte para textos e etc -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body page="iframe">
+
+    <div class="BlocoContato">
+        <button style="width: 9.5%; background-color: #00000000; border: 0;" id="BotaoFecharIframe" onclick="fecharIframe()">
+            <p class="FonteSubtitulo UnderlineAnim" style="font-size: 20px;">Fechar</p>
+        </button>
+        
+        <h1 class="FonteTitulo" style="text-align: center;">Adicionar Contato</h1>
+
+        <!-- Icone padrão de contatos -->
+        <div class="IconContato">
+            <img src="/img/user.png" class="ImgFormato" style="height: 100%; border: 2px solid rgb(104, 104, 104); border-radius: 50%;">
+        </div>
+    
+        <!-- Nome do contato -->
+        <div class="NomeContato">
+            <input type="text" name="" id="nomeContato" class="InputContato FonteTitulo" placeholder="Insira o Nome" style="text-align: center; font-size: 35px;" required>
+            <!-- <input type="submit" value="Confirmar" onclick="amog()"> -->
+        </div>
+
+        <!-- <script>
+function amog(){
+let nome = document.getElementById('teste').value;
+
+
+let nomeCoisado = JSON.stringify(nome);
+
+localStorage.setItem("nomeValor", nomeCoisado)}
+        </script> -->
+
+        <!-- Exibição do telefone do contato -->
+
+
+        <div class="InformacoesContato">
+
+            <!-- Telefone do contato -->
+            <div style="display: flex; position: relative; margin-bottom: 2%; height: 10%;">
+                <img src="/img/telephone.png" alt="" class="MiniIconContato ImgFormato">
+                <input type="tel" id="telefone" class="InputContato FonteSubtitulo" style="text-align: center; font-size: 25px; padding-left: 8%;" placeholder="Insira seu Número de Telefone" max="15" required>
+            </div>
+            <!-- E-mail do contato -->
+            <div style="display: flex; position: relative; margin-bottom: 2%; height: 10%;">
+                <img src="/img/email.png" alt="" class="MiniIconContato">
+                <input type="email" id="email" class="InputContato FonteSubtitulo" style="text-align: center; font-size: 25px; padding-left: 8%;" placeholder="Insira seu E-mail" maxlength="50">
+            </div>
+            <!-- Outras informações que podem ser inseridas do contato -->
+            <div style="display: flex; position: relative; margin-bottom: 5%;">
+                <img src="/img/description.png" alt="" class="MiniIconContato ImgFormato">
+                <input type="text" disabled class="InputContatoOutros FonteSubtitulo" style="text-align: center; font-size: 25px; padding-left: 8%;" value="Outras Informações">
+            </div>
+
+            <div class="BlocoTextoContato">
+                <textarea id="descricao" class="TextoContato FonteSubtitulo" placeholder="Insira outras informações extras que você desejar manter salvo."></textarea>
+            </div>
+            
+            <!-- Área de botões -->
+            <div class="AreaButtons" style="justify-content: center;">
+
+            <div class="DivButton" >
+                <input type="button" value="Adicionar" class="Button" id="btnAdicionar" onclick="salvarContato()">
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="javascript/AddContato.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,667 @@
+
+body{
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.Fundo[page=paginaprincipal]{
+    background: rgb(47,79,79);
+    background: linear-gradient(23deg, rgba(47,79,79,1) 0%, rgba(70,116,116,1) 35%, rgba(40,68,68,1) 100%);}
+
+.Fundo[page=detalhes]{
+    background: rgb(26,43,43);
+background: linear-gradient(90deg, rgba(26,43,43,1) 0%, rgba(42,71,71,1) 50%, rgba(24,42,42,1) 100%);}
+
+.Fundo[page=addcontato]{
+background: rgb(115,37,18);
+background: linear-gradient(90deg, rgba(115,37,18,1) 0%, rgba(153,70,54,1) 50%, rgba(115,37,18,1) 100%);}
+
+/* Header/Footer */
+
+.Header{
+    width: 100vw;
+    height: 15vh;
+    background: rgb(255,239,117);
+    border-bottom: 5px solid rgb(34,50,63);
+    position: fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    top: 0;
+    z-index: 999;
+    -webkit-box-shadow: 0px -9px 44px 16px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px -9px 44px 16px rgba(0,0,0,0.31);
+    box-shadow: 0px -9px 44px 16px rgba(0,0,0,0.31);
+}
+
+.NomeSite{
+    margin-left: -4.5%; 
+    margin-top: 9.4%;
+    z-index: -1;
+}
+
+.HeaderConteudo{
+    width: 30%;
+    height: 50%;
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+    font-size: 2.5vh;
+}
+
+
+.FooterFundo{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.Footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* ================================================================= */
+/* Pagina de Introdução (Site.html) */
+
+.FundoInicial{
+    background-image: url(/img/siteFundo.jpg);
+    z-index: -2;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    filter: blur(5px);
+    transform: scale(1.05, 1.05);
+}
+
+.CorpoIntroducao{
+    background: rgb(224,248,255);
+    background: linear-gradient(23deg, rgba(224,248,255,0.8) 0%, rgba(236,250,254,0.8) 35%, rgba(198,220,226,0.8) 100%);
+    border-radius: 40px;
+    border: 3px solid rgba(166, 185, 190, 0.85);
+    margin-top: 15%;
+    width: 80%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    display: flex;
+}
+
+.LoginIntroducao{
+    width: 50%;
+    height: 100%;
+}
+
+.TituloIntroducao{
+    font-size: 70px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.TextoIntroducao{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.BotoesIntroducao{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.ImagemIntroducao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100;
+}
+
+/* ================================================================= */
+/* Página Principal */
+
+.CorpoPrincipal{
+    background-color: rgb(255, 239, 117);
+    width: 60vw;
+    margin: auto;
+    margin-top: 11%;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-bottom: 20%;
+    height: auto;
+    -webkit-box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.47);
+-moz-box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.47);
+box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.47);
+}
+
+
+.PrincipalTitulo{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(212, 199, 98);
+    border-radius: 40px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.PrincipalConteudo{
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    transition: 0.3s;
+    border: 3px solid rgb(212, 199, 98);
+    border-top: 0;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 3%;
+}
+
+.AddGrupoInput{
+    display: flex;
+    align-items: center;
+    padding: 3%;
+}
+
+
+.GrupoContatos{
+    padding-bottom: 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.TituloGrupo{
+    border-bottom: 3px solid rgb(19,28,36);
+    margin-top: 2%;
+    display: flex;
+    color: rgb(34,50,63);
+    padding-left: 2%;
+    padding-right: 3%;
+    height: 70px;
+    z-index: 2;
+    position: relative;
+}
+
+.ContatoItem{
+    background-color: rgb(254,251,214);
+    height: 100px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 0.5%;
+    transition: 0.3s;
+    z-index: 1;
+    position: relative;
+}
+
+.ContatoItem:hover{
+    transform: scale(1.01, 1.03);
+    transition: 0.3s;
+}
+
+.ContatoNome{
+    display: flex;
+    align-items: center;
+    /* background-color: #fa4141; */
+    min-width: 50%;
+    text-align: left;
+    font-size: 12px;
+}
+
+.ContatoNumero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border: 3px solid rgb(212, 199, 98);;
+    border-top: 0;
+    border-bottom: 0;
+    font-size: 12px;
+}
+
+.ContatoBotoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+/* ================================================================= */
+/* Cadastro/Login */
+
+/* .CadastroBloco{
+    background-color: rgba(255, 88, 88, 0.548);
+    width: 30vw;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    padding: 20px;
+    border: 0;
+    border-radius: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.AreaCadastro{
+    position: relative;
+    width: 85%;
+    margin: auto;
+    background-color: aqua;
+    margin-top: 10%;
+}
+
+.IconCadastro{
+    width: 7%;
+    position: absolute;
+    padding: 2%;
+    margin-left: 88%;
+} */
+
+
+
+
+/* ================================================================= */
+/* Página de detalhes de um contato */
+
+
+.BlocoContato{
+    background: rgb(224,248,255);
+    background: linear-gradient(23deg, rgba(224,248,255,0.8) 0%, rgba(236,250,254,0.8) 35%, rgba(198,220,226,0.8) 100%);
+    width: 45vw;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 40px;
+    padding: 5%;
+    margin-bottom: 10%;
+}
+
+.BlocoContato[page=iframe]{
+    background: rgb(224,248,255);
+    background: linear-gradient(23deg, rgba(224,248,255,0.8) 0%, rgba(236,250,254,0.8) 35%, rgba(198,220,226,0.8) 100%);
+    margin: auto;
+}
+
+.IframeDiv{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    top: 0;
+    z-index: 10;
+}
+.IframeBackground{
+    background-color: #0000009c;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    transition: 0.3s;
+    z-index: -1;
+    animation: backgroundanimation 0.5s ease-in forwards;
+}
+@keyframes backgroundanimation {
+    from {
+        background-color: #00000000;
+    }
+    to {
+        background-color: #000000c0;
+    }
+}
+@keyframes backgroundanimationClose {
+    from {
+        background-color: #000000c0;
+    }
+    to {
+        background-color: #00000000;
+    }
+}
+
+.IframeContatos{
+    width: 100%; 
+    height: 100%;
+    border-radius: 40px;
+    transition: 0.3s; 
+    z-index: 0;
+    animation: iframeanimation 0.5s ease-in forwards;
+}
+@keyframes iframeanimation {
+    from {
+        height: 0%;
+    }
+    to {
+        height: 100%;
+    }
+}
+@keyframes iframeanimationClose {
+    from {
+        height: 100%;
+    }
+    to {
+        height: 0%;
+    }
+}
+
+
+.IconContato{
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    display: flex;
+}
+
+.NomeContato{
+    width: 100%;
+    height: 10vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+
+.InputContato{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    border-bottom: 3px solid rgb(177, 196, 202);
+    border-radius: 5px;
+    padding: 2%;
+    height: 35px;
+    width: 50%;
+    font-size: 20px;
+    transition: 0.3s;
+    justify-content: left;
+}
+
+.InputContato:hover{
+    width: 80%;
+    transition: 0.3s;
+    border-color: rgb(19,28,36);
+}
+
+.InputContato:focus{
+    background-color: white;
+    border-color: rgb(19,28,36);
+    border-radius: 15px;
+    padding: 2%;
+    z-index: 0;
+    width: 80%;
+    transition: 0.3s;
+    outline: 0;
+    transform: translateY(-2%);
+}
+
+.InputContatoOutros{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    border-bottom: 3px solid rgb(19,28,36);
+    border-radius: 5px;
+    padding: 2%;
+    height: 30%;
+    width: 50%;
+    font-size: 20px;
+    transition: 0.3s;
+    color: rgb(19,28,36);
+}
+
+
+.InformacoesContato{
+    width: 100%;
+    height: 50%;
+    padding-top: 5%;
+}
+
+
+.MiniIconContato{
+    width: 5%;
+    position: absolute;
+    padding: 2%;
+    z-index: 1;
+}
+
+.BlocoTextoContato{
+    width: 95%;
+    height: 200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: auto;
+}
+
+.TextoContato{
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    background-color: rgb(230, 230, 230);
+    color: rgb(19,28,36);
+    border: 2px solid rgb(177, 196, 202);;
+    border-radius: 40px;
+    font-size: large;
+    transition: 0.3s;
+}
+
+.TextoContato:hover{
+    border: 2px solid rgb(19,28,36);
+    transition: 0.3s;
+}
+
+.TextoContato:focus{
+    background-color: white;
+    color: rgb(19,28,36);
+    transition: 0.3s;
+    outline: 0;
+}
+
+
+
+
+/* ================================================================= */
+/* Formatação Geral */
+
+.FonteTitulo{
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.FonteSubtitulo{
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.FonteTexto{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.InputFormat{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    border-bottom: 3px solid rgb(212, 199, 98);
+    border-radius: 5px;
+    padding: 2%;
+    height: 35px;
+    width: 50%;
+    font-size: 20px;
+    transition: 0.3s;
+    justify-content: left;
+}
+
+.InputFormat:hover{
+    width: 80%;
+    transition: 0.3s;
+    border-color: rgb(19,28,36);
+}
+
+.InputFormat:focus{
+    background-color: rgb(255, 247, 159);
+    border: 3px solid rgb(19,28,36);
+    border-radius: 15px;
+    padding: 2%;
+    z-index: 0;
+    width: 80%;
+    transition: 0.3s;
+    outline: 0;
+    transform: translateY(-2%);
+}
+
+.Button{
+    background-color: rgb(34,50,63);
+    color: rgb(255, 255, 255);
+    border: 3px rgb(34,50,63);
+    border-style: solid;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 3%;
+    transition: 0.3s;
+    width: 150px;
+    height: 50px;
+}
+.Button:disabled{
+    background-color: rgb(55, 82, 104);
+    border: 3px rgb(52, 77, 99);
+}
+.Button:hover{
+    transform: scale(1.05, 1.05);
+    transition: 0.3s ease-in-out;
+    -webkit-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+}
+.Button:disabled:hover{
+    transform: scale(1, 1);
+    -webkit-box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0);
+}
+.Button:disabled:active{
+    background-color: rgb(121, 7, 7);
+    color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 3%;
+    width: 100%;
+    height: 100%;
+}
+
+.Button:active{
+    background-color: rgb(224,248,255);
+    color: rgb(19,28,36);
+    border: 1px rgb(19,28,36);
+    border-style: solid;
+    border-radius: 15px;
+    font-size: 22px;
+    padding: 1%;
+    transition: 0.1s;
+    width: 90%;
+    height: 80%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+.Button:active:before{
+    background-color: rgb(224,248,255);
+    border: 3px rgb(224,248,255);
+    border-style: solid;
+    border-radius: 15px;
+    transition: 0.1s;
+    width: 95%;
+    height: 85%;
+    padding-right: 3%;
+    padding-left: 3%;
+    z-index: 34;
+}
+
+.DivButton{
+    display:flex;justify-content:center;align-items:center;
+    width: 153px;
+    height: 50px;
+}
+
+
+.AreaButtons{
+    width: 100%;
+    height: 100%;
+    margin-top: 15%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.a:visited{
+    text-decoration: none;
+}
+
+.UnderlineAnim {
+    position: relative;
+    color: rgb(19,28,36);
+    text-decoration: none;
+  }
+  
+  .UnderlineAnim:hover {
+    color: rgb(19,28,36);
+  }
+
+  .UnderlineAnim::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(19,28,36);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .UnderlineAnim:hover::before {
+    transform: scaleX(1);
+  }
+
+.PretoPrincipal{color: rgb(34,50,63)} /* #22323f */
+
+.PretoSecundario{color: rgb(19,28,36)} /* #131c24 */
+
+.AmareloPrincipal{color: rgb(255, 239, 117)} /* #ffef75 */
+
+.AmareloSecundario{color: rgb(255, 247, 159)} /* #fefbd6 */
+
+.AmareloTerciario{color: rgb(212, 199, 98)} /* #D4C762 */
+
+.VerdePrimario{color: rgb(70, 116, 116)} /* #467474 */
+
+.VerdeSecundario{color: rgb(177, 196, 202);}
+
+.Branco{color: white;}
+
+.ImgFormato{
+    filter: brightness(0) saturate(100%) invert(15%) sepia(55%) saturate(385%) hue-rotate(165deg) brightness(91%) contrast(90%);
+
+}

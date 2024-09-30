@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Contatos</title>
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontes -->
+    <!-- Fonte para Titulos e etc -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Fonte para textos e etc -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="Fundo" page="paginaprincipal" onload="carregarContatos()">
+    
+    <div class="Header">
+        <div class="HeaderConteudo">
+            <a href="/Site.html" style="position: absolute; width: 20vw; height: 8vh;"></a> 
+            <img src="/img/logo.png" style="height: 100%;">
+            <h1 class="NomeSite FonteTitulo PretoPrincipal"><u>.ContactEase</u></h1>
+        </div>
+   </div>
+
+   <div class="CorpoPrincipal" id="principal">
+        <div class="PrincipalTitulo">
+            <h1 class="FonteTitulo PretoSecundario">Listagem de Contatos</h1><br>
+        </div>
+
+        <!-- Corpo principal da agenda inteira -->
+        <div class="PrincipalConteudo" id="container">
+            
+        <form action="" class="AddGrupoInput">
+            <div class="DivButton">
+                <input type="button" value="Adicionar Grupo" class="Button" style="width: 200px" id="ButtonNomeGrupo" onclick="addGrupo()">
+            </div>
+            <div style="display: flex; margin-left: 4%; width: 60%;">
+                <input type="text" class="InputFormat" placeholder="Nome do Grupo" required id="InputNomeGrupo" value="">
+            </div>
+
+        </form>
+
+
+        <div style="display: none;">
+            <!-- Grupo de contatos -->
+            <div class="GrupoContatos" id="DivGrupo">
+                
+
+                <!-- "Header" do grupo -->
+                <div class="TituloGrupo" style="justify-content: space-between;">
+
+                    <!-- Icon e Nome -->
+                    <div style="display: flex; width: 100%;">
+                        <img src="/img/group.png" class="ImgFormato">
+                        <h1 class="FonteTitulo" style="padding-left: 2%;" id="GrupoNome">Nome do Grupo</h1>
+                    </div>
+
+                    <!-- Botão de adicionar contato -->
+                    <div style="display:flex;justify-content:flex-end;align-items:center; margin-right: 6%;">
+                        <div class="DivButton">
+                            <input type="button" value="Adicionar Contato" class="Button" style="width: 400px" id="AddContatoBtn">
+                        </div>
+                    </div>
+
+                    <!-- Botão de deletar grupo -->
+                    <div style="display:flex;justify-content:flex-end;align-items:center;">
+                    <div class="DivButton">
+                        <input type="button" value="Apagar Grupo" class="Button" style="width: 400px">
+                    </div>
+                    </div>
+                </div>
+
+
+                <!-- Item de um contato -->
+
+                <div class="ContatoItem" id="DivContato" style="display: none;">
+                    <!-- Nome do Contato -->
+                    <div class="ContatoNome">
+                        <img src="/img/user.png" class="ImgFormato" style="height: 50%;">
+                        <h1 class="FonteSubtitulo" style="padding-left: 1%;">Nome Contato</h1>
+                    </div>
+
+                    <!-- Telefone do contato -->
+                    <div class="ContatoNumero">
+                        <h1 class="FonteSubtitulo">4002-8922</h1>
+                    </div>
+                    
+                    <!-- Botão de detalhes do contato -->
+                    <div class="ContatoBotoes">
+
+                        <div class="DivButton">
+                            <input type="button" value="Detalhes" class="Button">
+                        </div>
+                    </div>
+                </div>
+
+            
+            </div>
+
+
+            </div>
+        </div>
+        
+   </div>
+   
+   <div class="IframeDiv" id="IframeDiv" style="display: none;">
+
+    <div class="IframeBackground" id="IframeBackground" style="background-color: #00000000; transition: 0.3s"></div>
+    <iframe src="/PaginaAddContato2.html" frameborder="0" class="IframeContatos" id="IframeContatos"></iframe>
+   </div>
+
+   <br><br><br><br><br><br><br><br><br>
+    <div class="FooterFundo">
+        <img src="/img/telefoneFooter.png" style="width: 100%; transform: translateY(105px); filter: blur(4px);">
+    </div>
+   <script src="javascript/script.js"></script>
+</body>
+</html>
